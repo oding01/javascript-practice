@@ -26,7 +26,6 @@ class Company {
     this.name = name;
     this.hired = hired;
   }
-
   checkHiredEmployee(type) {
     const hiredString = this.convert(this.hired);
     const isExist = hiredString.includes(type.option);
@@ -40,6 +39,7 @@ class Company {
     const convertString = str.map((hire) => {
       const subString = hire.split(' ');
       const joinString = subString.join('_');
+      console.log(joinString);
       const hiredString = joinString.toUpperCase();
 
       return hiredString;
