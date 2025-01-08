@@ -4,10 +4,14 @@ const users = [
   { name: 'Caron', age: 30, specialty: 'engineer' },
 ];
 
-for (let index in users) {
-  console.log(users[index].name);
-}
+// for (let index in users) {
+//   console.log(users[index].name);
+// }
 
-for (let user of users) {
-  console.log(user.name);
+// for (let user of users) {
+//   console.log(user.name);
+// }
+
+for (let index in users) {
+  console.log({ name: users[index].name });
 }
